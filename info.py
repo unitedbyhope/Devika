@@ -11,14 +11,14 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '6129258'))
-API_HASH = environ('API_HASH', '9e4430929d7757512f864d160dac0a98')
-BOT_TOKEN = environ('BOT_TOKEN', '5030500439:AAHL9P_-PzvqV5pQ_GWCE26IlU4B25ewe2Y')
+SESSION = "Media_search"
+API_ID = int(6129258)
+API_HASH = "9e4430929d7757512f864d160dac0a98"
+BOT_TOKEN = "5030500439:AAHL9P_-PzvqV5pQ_GWCE26IlU4B25ewe2Y"
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
+USE_CAPTION_FILTER = True 
 PICS = (environ.get('PICS', 'https://telegra.ph/file/286801e61b556c4be376a.jpg')).split()
 
 # Admins, Channels & Users
@@ -32,9 +32,9 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Hemanth:Hemanth@cluster0.uzzh3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_URI = "mongodb+srv://Hemanth:Hemanth@cluster0.uzzh3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+DATABASE_NAME = "cluster0"
+COLLECTION_NAME = "Telegram_files"
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001792180012'))
