@@ -12,7 +12,7 @@ class script(object):
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
     SOURCE_TXT = """<b>NOTE:</b>
 - This is a open source project. 
-- Source - https://github.com/MrMKN/PROFESSOThis T  
+- Source - https://github.com/MrMKN/PROFESSOR-BOT 
 
 <b>DEVS:</b>
 - <a href=https://github.com/MrMKN>click</a>"""
